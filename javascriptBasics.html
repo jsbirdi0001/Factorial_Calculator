@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavascriptBasics</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+
+	<style>
+		#demo{
+			background-color: black;
+			color: rgb(230,230,230);
+			border: 2px solid rgb(100,100,100);
+			padding: 5px;
+			border-radius: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.jumbotron{
+			transition: 0.4s;
+			-transition-duration: 0.4s;
+		}
+		.jumbotron:hover{
+			background: linear-gradient(to bottom, rgb(200,150,175),white);
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotron p-2 pr-4 text-center">
+		<div class="container-fluid ">
+			<div class="row">
+				<div style="height: 100px; transition: 0.5s">
+					<img src="https://www.svgimages.com/svg-image/s4/factorial-256x256.png" alt="" class="img-fluid" height="100" style="height: 120px" id="fact-img" onmouseover="myfunction()" onmouseout="myfunction1()"> 
+				</div>
+				<div style="display:none" id="fact-calc">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Calculator_icon.svg/2000px-Calculator_icon.svg.png" alt="" style="height: 110px ;style="margin-top: auto; margin-bottom: auto onmouseover="myfunction()" onmouseout="myfunction1()">
+				</div>
+				<div id="fact-brand">
+					<h1 class="display-4 font-weight-normal">Factorial Calculator</h1>
+					<p class="font-weight-light">Calculate the Factorial Easily</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="text-center" style="margin: 0 auto">
+		<h1 class="d-inline-block ">Answer:</h1>
+		<h1 id="demo" class="kbd d-inline-block"></h1>
+	</div>
+	<script>
+		document.querySelector("#demo").innerHTML="The factorial of "+number+" is "+ fact;
+
+	</script>
+</body>
+</html>
